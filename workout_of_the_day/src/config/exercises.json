@@ -1,0 +1,48 @@
+{
+  "rounds": 3,
+  "repetitions": 3,
+  "categories": [
+    {
+      "name": "push",
+      "exercises": [
+        "30 push-ups",
+        "25 wide-grip push-ups",
+        "15 close-grip push-ups",
+        "15 pike push-ups",
+        "10 diamond push-ups",
+        "25 chair dips"
+      ]
+    },
+    {
+      "name": "pull",
+      "exercises": [
+        "10 pull ups",
+        "10 chin ups",
+        "12 curl press",
+        "15 towel rows",
+        "20 supermen"
+      ]
+    },
+    {
+      "name": "lower",
+      "exercises": [
+        "30 squats",
+        "25 sumo squats",
+        "25 jump squats",
+        "15 lunges",
+        "40 circuit calf raise",
+        "12 single-leg deadlift"
+      ]
+    },
+    {
+      "name": "core",
+      "exercises": [
+        "20 tuck crunches",
+        "30 russian twists",
+        "30 bicycle crunches",
+        "1 min 6 inches",
+        "2 min plank routine"
+      ]
+    }
+  ]
+}
