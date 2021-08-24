@@ -26,13 +26,14 @@ fn main() {
     let file_contents = fs::read_to_string(filepath)
         .expect("Something went wrong when reading the file");
 
-    let workout: Workout = serde_json::from_str(&file_contents).unwrap();
+    let mut workout: Workout = serde_json::from_str(&file_contents).unwrap();
 
     for r in 0..workout.rounds {
         println!("Round {}", r+1);
-        for c in workout.categories.iter() {
-            let random_index = random::<usize>() % c.exercises.len();
-            println!("{}", c.exercises[random_index]);
+        for c in 0..workout.categories.len() {
+            let random_index = random::<usize>() % workout.categories[c].exercises.len();
+            println!("{}", workout.categories[c].exercises[random_index]);
+            workout.categories[c].exercises.remove(random_index);
         }
         println!("Repeat {} times", workout.repetitions);
         println!("");
